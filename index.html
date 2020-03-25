@@ -7,11 +7,11 @@
     <script src="js/scripts.js"></script>
     <title>HTML help</title>
   </head>
-  <body>
-    <div class="container">
-      <h1>Tell Us About Yourself!</h1>
+    <body>
+      <div class="container">
+        <h1>Tell Us About Yourself!</h1>
       
-        <form id="fomeOne">
+        <form id="formOne">
           <div class="form-group">
             <label for="firstName">First Name</label>
             <input id="firstName" class="form-control" type="text">
@@ -22,7 +22,7 @@
           </div>
         </form>   
         
-          <h4>Age:</h4>
+        <h4>Age:</h4>
           <select class="form-control" id="age">
             <option>18 and under</option>
             <option>19-25</option>
@@ -34,7 +34,7 @@
             <option>61+</option>
           </select>
           
-          <h4>Favorite Ice Cream:</h4>
+        <h4>Favorite Ice Cream:</h4>
           <div class="radio">
             <label>
               <input type="radio" name="flavor" value="chocolate" checked>
@@ -54,7 +54,7 @@
             </label>
           </div>
 
-          <h4>Favorite Day of the Year:</h4>
+        <h4>Favorite Day of the Year:</h4>
           <div class="form-group">
             <label for="faveDate">What's the best date?</label>
             <input id="faveDate" class="form-control" type="date">
@@ -64,42 +64,55 @@
               <label for="dateWhy">Why is that date so great?</label>
               <input id="dateWhy" class="form-control" type="text">
             </div>
+          </form>
 
-          <button type="submit" class="btn btn-primary">Submit!</button>
-       
+      <button type="submit" class="btn btn-primary">Submit!</button>
+      
+      <div id="output">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Age Group</th>
+              <th scope="col">Ice Cream Flavor</th>
+              <th scope="col">Favorite Day</th>
+              <th scope="col">Why That Date?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><span class="firstName"></span></td>
+              <td><span class="lastName"></span></td>
+              <td><span class="flavor"></span></td>
+              <td><span class="faveDate"></span></td>
+              <td><span class="dateWhy"></span></td>
+            </tr>
+
+          </tbody>
+        </table>
       </div>
+    </div>
+  </body>
+</html>
 
-  <div id="output">
-
-  <table class="table">
-    <thead>
-    <tr>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Age Group</th>
-      <th scope="col">Ice Cream Flavor</th>
-      <th scope="col">Favorite Day</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-    </tr>
+r>
   </tbody>
 </table>
 
-</div>
-</body>
-    </tr>
+    
+    </div>
+  </body>
+</html>r>
+  </tbody>
+</table>
+
+    
+    </div>
+  </body>
+</html>r>
   </tbody>
 </table>
 

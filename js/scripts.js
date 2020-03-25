@@ -1,8 +1,23 @@
  $(document).ready(function(){
-  $("form#formOne").submit(function(event) {
+  $("#formOne").submit(function(event) {
     event.preventDefault();
-    var firstname = parseInt($("#firstName").val());
-    var lastname = parseInt($("#lastName").val());
-   
+    var firstname = $("#firstName").val();
+    var lastname = $("#lastName").val();
+
+    $(".firstName").text(firstNameInput);
+    $(".lastName").text(lastNameInput)
   });
+
+
+  $("#age").submit(function(event) {
+    event.preventDefault();
+    var age = $("#age").val();
+    $(".age").text(age); 
+  });
+ 
+
+
+  $("#output").show();
+
+  event.preventDefault();
 });
