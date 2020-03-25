@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>HTML help</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tell Us About Yourself!</h1>
+      
+        <form id="fomeOne">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" class="form-control" type="text">
+          </div>
+        </form>   
+        
+          <h4>Age:</h4>
+          <select class="form-control" id="age">
+            <option>18 and under</option>
+            <option>19-25</option>
+            <option>26-32</option>
+            <option>33-39</option>
+            <option>40-46</option>
+            <option>47-53</option>
+            <option>54-60</option>
+            <option>61+</option>
+          </select>
+          
+          <h4>Favorite Ice Cream:</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+
+          <h4>Favorite Day of the Year:</h4>
+          <div class="form-group">
+            <label for="faveDate">What's the best date?</label>
+            <input id="faveDate" class="form-control" type="date">
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="dateWhy">Why is that date so great?</label>
+              <input id="dateWhy" class="form-control" type="text">
+            </div>
+
+          <button type="submit" class="btn btn-primary">Submit!</button>
+       
+      </div>
+
+  <div id="output">
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Age Group</th>
+      <th scope="col">Ice Cream Flavor</th>
+      <th scope="col">Favorite Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</body>
+    </tr>
+  </tbody>
+</table>
+
+    
+    </div>
+  </body>
+</html>
