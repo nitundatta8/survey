@@ -20,10 +20,9 @@
             <label for="lastName">Last Name</label>
             <input id="lastName" class="form-control" type="text">
           </div>
-        </form>   
-        
-        <h4>Age:</h4>
-          <select class="form-control" id="age">
+          
+          <label for="age">Age</label>
+          <select class="form-control" id="age">Age
             <option>18 and under</option>
             <option>19-25</option>
             <option>26-32</option>
@@ -34,10 +33,15 @@
             <option>61+</option>
           </select>
           
-        <h4>Favorite Ice Cream:</h4>
+          <div class="form-group">
+            <label for="faveDate">What's the best date?</label>
+            <input id="faveDate" class="form-control" type="date">
+          </div>
+          
+         <h4>Favorite Ice Cream:</h4>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="chocolate" checked>
+              <input type="radio" name="flavor" value="chocolate">
               Chocolate
             </label>
           </div>
@@ -53,22 +57,9 @@
               Cookies & Cream
             </label>
           </div>
-
-        <h4>Favorite Day of the Year:</h4>
-          <div class="form-group">
-            <label for="faveDate">What's the best date?</label>
-            <input id="faveDate" class="form-control" type="date">
-          </div>
-          <form>
-            <div class="form-group">
-              <label for="dateWhy">Why is that date so great?</label>
-              <input id="dateWhy" class="form-control" type="text">
-            </div>
-          </form>
-
-      <button type="submit" class="btn btn-primary">Submit!</button>
-      
-      <div id="output">
+        <button type="submit" class="btn btn-primary">Submit!</button>
+        </form>  
+      <!-- <div id="output"> -->
 
         <table class="table">
           <thead>
@@ -83,40 +74,17 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td><span class="firstName"></span></td>
-              <td><span class="lastName"></span></td>
-              <td><span class="flavor"></span></td>
-              <td><span class="faveDate"></span></td>
-              <td><span class="dateWhy"></span></td>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
 
           </tbody>
         </table>
-      </div>
-    </div>
-  </body>
-</html>
-
-r>
-  </tbody>
-</table>
-
-    
-    </div>
-  </body>
-</html>r>
-  </tbody>
-</table>
-
-    
-    </div>
-  </body>
-</html>r>
-  </tbody>
-</table>
-
-    
+      <!-- </div> -->
     </div>
   </body>
 </html>
