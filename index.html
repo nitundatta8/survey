@@ -4,87 +4,43 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/survey-v2-ul.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
     <title>HTML help</title>
   </head>
-    <body>
-      <div class="container">
-        <h1>Tell Us About Yourself!</h1>
-      
-        <form id="formOne">
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input id="firstName" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input id="lastName" class="form-control" type="text">
-          </div>
-          
-          <label for="age">Age</label>
-          <select class="form-control" id="age">Age
-            <option>18 and under</option>
-            <option>19-25</option>
-            <option>26-32</option>
-            <option>33-39</option>
-            <option>40-46</option>
-            <option>47-53</option>
-            <option>54-60</option>
-            <option>61+</option>
-          </select>
-          
-          <div class="form-group">
-            <label for="faveDate">What's the best date?</label>
-            <input id="faveDate" class="form-control" type="date">
-          </div>
-          
-         <h4>Favorite Ice Cream:</h4>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="chocolate">
-              Chocolate
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="vanilla">
-              Vanilla
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="cookiesandcream">
-              Cookies & Cream
-            </label>
-          </div>
-        <button type="submit" class="btn btn-primary">Submit!</button>
-        </form>  
-      <!-- <div id="output"> -->
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Age Group</th>
-              <th scope="col">Ice Cream Flavor</th>
-              <th scope="col">Favorite Day</th>
-              <th scope="col">Why That Date?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"></th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-
-          </tbody>
-        </table>
-      <!-- </div> -->
+  <body>
+    <div class="container">
+      <h1>Tell Us About Your Favorite Things!</h1>
+      <form id="intro">
+        <div class="form-group">
+         <label for="food">What is your favorite food?</label>
+           <input type="text" id="food" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+            <input type="text" id="color" class="form-control">
+        </div>
+        <label for="num">Choose your favorite number.</label>
+        <select class="form-control" id="num">
+          <option>10</option>
+          <option>20</option>
+          <option>20</option>
+        </select>
+        <div class="form-group">
+          <h3>Favorite Ice Cream</h3>
+          <input type="radio" name="ice" value="chocolate">Chocolate </br>
+          <input type="radio" name="ice" value="vanilla">Vanilla </br>
+          <input type="radio" name="ice" value="Cookies and Cream">Cookies and Cream
+        </div>
+        <div class="form-group">
+          <label for="date">Favorite Date</label></br>
+          <input type="date"  id="dateId" class="form-control">
+        </div>
+       <button type="submit" class="btn btn-primary">submit</button>
+      </form>
+      <div class="item-list">
+        <ul></ul>
+      </div>
     </div>
   </body>
 </html>
