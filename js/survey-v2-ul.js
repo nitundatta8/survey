@@ -1,12 +1,14 @@
 var userInputs = [];
 $(document).ready(function(){
    $("#intro").submit(function(event){
-      var questions =['food','color','num','dateId'];
+      var questions =['food','color','num','date'];
       questions.forEach(function(question){
-      var  userInput  = $('#'+ question).val();
+      var  userInput  = "Favorite "+ question + ": " + $('#'+ question).val();
+      $('#'+ question).val('');
       userInputs.push(userInput);
     });
-    var iceCream = $("input:radio[name=ice]:checked").val();
+    var iceCream ="Favorite Icecream: "+ $("input:radio[name=ice]:checked").val();
+    
     userInputs.push(iceCream);
     console.log(userInputs);
 
